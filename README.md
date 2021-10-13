@@ -1,1 +1,9 @@
 # card
+card struktur:
+- card
+  - card-header
+  - card-body
+  - card-footer
+  - card-title
+  -  card-img
+  -  card-icon
