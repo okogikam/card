@@ -16,28 +16,81 @@
   </head>
   <body>
     <nav class="nav">
-      <a href="#" class="nav-link">Home</a>
-      <a href="list.html" class="nav-link">Daftar Card</a>
+      <div class="menu-ctr">
+        <div class="icon">
+          <img src="./foto.jpg" alt="" />
+        </div>
+        <button class="btn-menu"></button>
+      </div>
+      <div class="menu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="list.html" class="nav-link">Daftar Card</a>
+      </div>
     </nav>
     <header class="header">
       <div class="header-text">
         <h1 class="title">HancauCard (HC)</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          enim excepturi culpa velit voluptatem ad vitae dolore incidunt, ex
+          quod sint impedit blanditiis ipsum molestiae nostrum tenetur quo earum
+          quos!
+        </p>
+        <div class="btn-grup">
+          <button class="btn btn-start">Get Started</button>
+          <button class="btn btn-download">Download</button>
+        </div>
       </div>
       <div class="header-img">
         <img src="foto.jpg" alt="" />
       </div>
     </header>
     <main class="main">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, sed
-        aspernatur blanditiis dicta, inventore laboriosam sequi magni non quo
-        dolore nostrum nemo sunt illum omnis eos? Illum qui at quasi assumenda
-        tempore eum ex cum deserunt incidunt consectetur eveniet sapiente, modi
-        animi doloremque porro hic error voluptatum provident eligendi a.
-      </p>
+      <section id="install">
+        <h3 class="title">Install</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, sed
+          aspernatur blanditiis dicta, inventore laboriosam sequi magni non quo
+          dolore nostrum nemo sunt illum omnis eos? Illum qui at quasi assumenda
+          tempore eum ex cum deserunt incidunt consectetur eveniet sapiente,
+          modi animi doloremque porro hic error voluptatum provident eligendi a.
+        </p>
+        <div class="btn-grup">
+          <button class="btn">Download</button>
+        </div>
+      </section>
+      <section id="cth">
+        <h3 class="title">contoh</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          corporis culpa ex ullam non maiores sint soluta quas, nam quidem.
+        </p>
+        <img src="./foto.jpg" alt="" />
+        <div class="btn-grup">
+          <button class="btn">Browse More</button>
+        </div>
+      </section>
     </main>
     <footer class="footer">
+      <section id="more-info">
+        <div class="link">
+          <a href="#">GIT Document</a>
+          <a href="#">Contoh</a>
+        </div>
+        <div class="kontak">
+          <a href="#">Email</a>
+        </div>
+      </section>
       <p class="footer">&copy;hancau.net 2021</p>
     </footer>
+    <script>
+      // variabel
+      let btnmenu = document.querySelector(".btn-menu");
+      let menu = document.querySelector(".menu");
+
+      btnmenu.addEventListener("click", () => {
+        menu.classList.toggle("show-grid");
+      });
+    </script>
   </body>
 </html>

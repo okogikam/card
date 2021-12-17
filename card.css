@@ -589,3 +589,33 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
 }
 /* ./ .type-14  */
+/* type-15  */
+.card.type-15 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.type-15 .card-img {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: var(--black);
+}
+.type-15 .card-img img {
+  /* width: 180px; */
+}
+.type-15 .card-footer {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: var(--black);
+  color: var(--white);
+}
+.type-15 .card-header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: var(--orange);
+}
+.type-15 .card-body {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: var(--orange);
+}
+/* ./type-15  */
