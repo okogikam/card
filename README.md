@@ -10,3 +10,7 @@ hanya dengan mengubah tipe desain contoh : tipe-1, tipe-2, dst.
   - card-title
   -  card-img
   -  card-icon
+#### Link
+```html
+<link rel="stylesheet" href="https://okogikam.github.io/card/card.css" integrity="sha384-oJRLp9bL5C/iwWkvVwfOe7cE3LK0qN25eH/Mcl9oVd26zh9SGgGKfEKKC4koC0xN" crossorigin="anonymous">
+```
