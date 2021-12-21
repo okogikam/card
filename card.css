@@ -162,9 +162,6 @@
   padding: 10px;
   background-color: white;
 }
-.type-4 .card-title {
-  /* padding: 30px; */
-}
 .type-4 .card-body {
   grid-row: 4/5;
   background-color: white;
@@ -598,9 +595,6 @@
   grid-column: 2/3;
   grid-row: 2/3;
   background-color: var(--black);
-}
-.type-15 .card-img img {
-  /* width: 180px; */
 }
 .type-15 .card-footer {
   grid-column: 2/3;

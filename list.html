@@ -11,16 +11,21 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="card.css" />
     <title>Card list</title>
     <style>
       body {
         background-color: #eaeaed;
+        background-image: url("./bg.jpg");
       }
       .card-list {
+        width: 100vw;
+        /* max-width: 1200px; */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+        padding: 30px;
       }
       @media (max-width: 900px) {
         .card-list {
@@ -28,7 +33,7 @@
           grid-template-columns: 1fr 1fr;
         }
       }
-      @media (max-width: 400px) {
+      @media (max-width: 600px) {
         .card-list {
           display: grid;
           grid-template-columns: 1fr;
@@ -44,345 +49,386 @@
     </style>
   </head>
   <body>
-    <h1 class="title">Daftar Card</h1>
-    <h2>Group 1</h2>
-    <div class="card-list">
-      <div class="list">
-        <h3>Card Default</h3>
-        <div class="card">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
+    <nav class="nav">
+      <div class="menu-ctr">
+        <div class="icon">
+          <img src="./foto.jpg" alt="" />
+          <span class="title">hancau</span>
+        </div>
+
+        <button class="btn-menu"><i class="btn-icon"></i></button>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="list.html" class="nav-link">Daftar Card</a>
+      </div>
+    </nav>
+    <header class="header">
+      <h1 class="title">Daftar Card</h1>
+      <h2>Group 1</h2>
+    </header>
+    <main class="main">
+      <div class="card-list">
+        <div class="list">
+          <h3>Card Default</h3>
+          <div class="card">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
           </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
+        </div>
+        <div class="list">
+          <h3>Card type 1</h3>
+          <div class="card type-1">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
           </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
+        </div>
+        <div class="list">
+          <h3>Card type 2</h3>
+          <div class="card type-2">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
           </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
+        </div>
+        <div class="list">
+          <h3>Card type 3</h3>
+          <div class="card type-3">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 4</h3>
+          <div class="card type-4">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 5</h3>
+          <div class="card type-5">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 6</h3>
+          <div class="card type-6">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 7</h3>
+          <div class="card type-7">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 8</h3>
+          <div class="card type-8">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 9</h3>
+          <div class="card type-9">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 10</h3>
+          <div class="card type-10">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 11</h3>
+          <div class="card type-11">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 12</h3>
+          <div class="card type-12">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 13</h3>
+          <div class="card type-13">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 14</h3>
+          <div class="card type-14">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <h3>Card type 15</h3>
+          <div class="card type-15">
+            <div class="card-header" title="card header">
+              <p class="card-title">CARD TITLE</p>
+            </div>
+            <div class="card-img">
+              <img src="foto.jpg" alt="" />
+            </div>
+            <div class="card-body" title="card body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat molestiae ducimus quo ab deserunt inventore ex minima,
+                labore optio in?
+              </p>
+            </div>
+            <div class="card-footer" title="card footer">
+              <p>&copy; card footer</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="list">
-        <h3>Card type 1</h3>
-        <div class="card type-1">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
+    </main>
+    <footer class="footer">
+      <section id="more-info">
+        <div class="link">
+          <h4 class="title">link</h4>
+          <a href="#">GIT Document</a>
+          <a href="#">Contoh</a>
         </div>
-      </div>
-      <div class="list">
-        <h3>Card type 2</h3>
-        <div class="card type-2">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
+        <div class="kontak">
+          <h4 class="title">kontak</h4>
+          <a href="#">Email</a>
         </div>
-      </div>
-      <div class="list">
-        <h3>Card type 3</h3>
-        <div class="card type-3">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 4</h3>
-        <div class="card type-4">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 5</h3>
-        <div class="card type-5">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 6</h3>
-        <div class="card type-6">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 7</h3>
-        <div class="card type-7">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 8</h3>
-        <div class="card type-8">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 9</h3>
-        <div class="card type-9">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 10</h3>
-        <div class="card type-10">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 11</h3>
-        <div class="card type-11">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 12</h3>
-        <div class="card type-12">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 13</h3>
-        <div class="card type-13">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 14</h3>
-        <div class="card type-14">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <h3>Card type 15</h3>
-        <div class="card type-15">
-          <div class="card-header" title="card header">
-            <p class="card-title">CARD TITLE</p>
-          </div>
-          <div class="card-img">
-            <img src="foto.jpg" alt="" />
-          </div>
-          <div class="card-body" title="card body">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              molestiae ducimus quo ab deserunt inventore ex minima, labore
-              optio in?
-            </p>
-          </div>
-          <div class="card-footer" title="card footer">
-            <p>&copy; card footer</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+      <p class="footer">&copy;hancau.net 2021</p>
+    </footer>
+    <script>
+      // variabel
+      let btnmenu = document.querySelector(".btn-menu");
+      let menu = document.querySelector(".menu");
+
+      btnmenu.addEventListener("click", () => {
+        menu.classList.toggle("show-grid");
+      });
+    </script>
   </body>
 </html>

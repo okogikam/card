@@ -11,46 +11,122 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="card.css" />
     <title>Card Document</title>
     <style>
-      body {
-        display: flex;
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
         justify-content: center;
         align-items: center;
-        background-color: #eaeaed;
-
-        /* width: 100vw; */
-        height: 90vh;
+        padding: 10px;
+      }
+      #code {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        max-height: 500px;
+        overflow: auto;
+      }
+      @media screen and (max-width: 600px) {
+        main {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="card type-15">
-      <div class="card-header" title="card header">
-        <p class="card-title">CARD TITLE</p>
+    <nav class="nav">
+      <div class="menu-ctr">
+        <div class="icon">
+          <img src="./foto.jpg" alt="" />
+          <span class="title">hancau</span>
+        </div>
+
+        <button class="btn-menu"><i class="btn-icon"></i></button>
       </div>
-      <div class="card-img">
-        <img src="foto.jpg" alt="" />
+      <div class="menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="list.html" class="nav-link">Daftar Card</a>
       </div>
-      <div class="card-body" title="card body">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-          molestiae ducimus quo ab deserunt inventore ex minima, labore optio
-          in?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          magni totam ullam eius mollitia sed minus corporis nisi cumque error
-          nesciunt vitae hic animi ipsa minima velit repellendus illum odit sint
-          ipsum, aliquid nobis sit pariatur? Nobis, quidem illum minus vero
-          soluta, aspernatur voluptatem enim quae, esse voluptates aliquam.
-          Veniam.
-        </p>
+    </nav>
+    <header>
+      <h1 id="card-type" class="title"></h1>
+    </header>
+    <main id="main">
+      <div class="card type-12">
+        <div class="card-header" title="card header">
+          <p class="card-title">CARD TITLE</p>
+        </div>
+        <div class="card-img">
+          <img src="foto.jpg" alt="" />
+        </div>
+        <div class="card-body" title="card body">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+            molestiae ducimus quo ab deserunt inventore ex minima, labore optio
+            in?
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            magni totam ullam eius mollitia sed minus corporis nisi cumque error
+            nesciunt vitae hic animi ipsa minima velit repellendus illum odit
+            sint ipsum, aliquid nobis sit pariatur? Nobis, quidem illum minus
+            vero soluta, aspernatur voluptatem enim quae, esse voluptates
+            aliquam. Veniam.
+          </p>
+        </div>
+        <div class="card-footer" title="card footer">
+          <p>&copy; card footer</p>
+        </div>
       </div>
-      <div class="card-footer" title="card footer">
-        <p>&copy; card footer</p>
-      </div>
-    </div>
+<pre>
+      <section id="code"></section>
+</pre>
+    </main>
+    <footer class="footer">
+      <section id="more-info">
+        <div class="link">
+          <h4 class="title">link</h4>
+          <a href="#">GIT Document</a>
+          <a href="#">Contoh</a>
+        </div>
+        <div class="kontak">
+          <h4 class="title">kontak</h4>
+          <a href="#">Email</a>
+        </div>
+      </section>
+      <p class="footer">&copy;hancau.net 2021</p>
+    </footer>
+
+    <script>
+      let cardCode = document.querySelector(".card");
+      console.log(cardCode);
+      showCode(cardCode);
+      showTitle(cardCode);
+
+      function showCode(code) {
+        let box = document.querySelector("#code");
+        let a = document.createElement("code");
+        a.innerText = code.innerHTML;
+        box.append(a);
+      }
+      function showTitle(code) {
+        let j = document.querySelector("#card-type");
+        j.innerText = code.attributes[0].nodeValue;
+      }
+    </script>
+    <script>
+      // variabel
+      let btnmenu = document.querySelector(".btn-menu");
+      let menu = document.querySelector(".menu");
+
+      btnmenu.addEventListener("click", () => {
+        menu.classList.toggle("show-grid");
+      });
+    </script>
   </body>
 </html>
