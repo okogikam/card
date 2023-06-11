@@ -2,7 +2,7 @@
 #### Rangkuman
 ini adalah kumpulan desain kartu dengan css, dapatkan desain kartu secara mudah
 hanya dengan mengubah tipe desain contoh : tipe-1, tipe-2, dst.
-[contoh](Your site is live at https://okogikam.github.io/card/)
+[contoh](https://okogikam.github.io/card/)
 #### card struktur:
 - card
   - card-header
